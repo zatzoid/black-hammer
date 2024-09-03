@@ -1,0 +1,67 @@
+@import url(./css/vendor/normalize.css);
+@import url(./css/vendor/font.css);
+
+/* ui */
+@import url(./css/ui/btn-border.css);
+@import url(./css/ui/modal.css);
+@import url(./css/ui/input-line.css);
+@import url(./css/ui/card-column.css);
+@import url(./css/ui/card-row.css);
+/* ui */
+
+@import url(./css/header.css);
+@import url(./css/heading.css);
+@import url(./css/categories.css);
+@import url(./css/marquee.css);
+@import url(./css/blog.css);
+@import url(./css/footer.css);
+
+/* order */
+@import url(./css/order.css);
+/* order */
+
+/* thx */
+@import url(./css/thx.css);
+/* thx */
+
+/* search */
+@import url(./css/search.css);
+/* search */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    --max-width: 1800px;
+    --col-pink:rgba(250, 143, 239, 1);
+    --col-blue: rgba(174, 207, 255, 1);
+    --col-purple: rgba(203, 182, 255, 1);
+    --col-purple-dark: rgba(174, 151, 232, 1);
+    --col-lime: rgba(217, 255, 90, 1);
+    --col-white: rgba(255, 255, 255, 1);
+    color: var(--col-white);
+    background-color: var(--col-purple-dark);
+    position: relative;
+
+}
+
+.content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+    .content{
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        padding: 0 15px;
+    }
+}

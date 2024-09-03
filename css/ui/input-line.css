@@ -1,0 +1,26 @@
+.input-line {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-bottom-color: var(--col-lime);
+    padding-bottom: 15px;
+    color: var(--col-white);
+
+    font-family: Euclid Circular A;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.02px;
+    text-align: left;
+
+}
+.input-line::placeholder{
+    font-family: Euclid Circular A;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.02px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--col-white);
+}
+.input-line:focus{
+    outline: none;
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Le Murmure';
+    src: url('./LeMurmure-Regular.eot'); 
+    src: url('./LeMurmure-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('./LeMurmure-Regular.woff2') format('woff2'), 
+         url('./LeMurmure-Regular.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Floreste';
+    src: url('./Floreste.ttf') format('ttf'); 
+    src: url('./Floreste.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Circular A';
+    src: url('./EuclidCircularA-Medium.ttf') format('ttf'); 
+    src: url('./EuclidCircularA-Medium.woff') format('woff'); 
+    src: url('./EuclidCircularA-Medium.woff2') format('woff2'); 
+    font-weight: 500;
+    font-style: normal;
+}
