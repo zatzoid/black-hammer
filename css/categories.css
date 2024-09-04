@@ -99,7 +99,7 @@
     border: 0.125rem solid var(--col-lime);
     background-color: transparent;
     cursor: pointer;
-    transform: translate(-17%,25%);
+    transform: translate(-17%, 25%);
     margin-top: 18%;
 }
 
@@ -292,11 +292,12 @@
     .categories {
         margin-bottom: 7.5rem;
     }
+
     .categories__c-items {
         grid-template-columns: repeat(4, calc(100% - 15px));
     }
-    .categories__c-item {
-    }
+
+
 
     .categories___c-cards-filters {
         flex-direction: column-reverse;
@@ -317,12 +318,24 @@
     .categories {
         margin-top: 7.5rem;
     }
+
     .categories__c-item-btn {
         width: 3.5rem;
         height: 3.5rem;
         transform: translate(-20%, 50%);
     }
+
     .categories__c-item-img {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .categories{
+        margin-bottom: 120px;
+    }
+    .categories__c-item-count {
+       height: 15%;
+       top: 33%;
     }
 }

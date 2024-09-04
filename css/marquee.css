@@ -36,7 +36,6 @@
 
 .marquee__i-el {
     display: flex;
-    gap: 1.25rem;
 }
 
 .marquee__i-el-text {
@@ -54,7 +53,50 @@
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .marquee__i_blue {
+        transform: rotate(350deg);
+    }
+
+    .marquee__i_purple {
+        transform: rotate(11deg);
+    }
+}
+
+@media screen and (max-width:756px) {
+    .marquee__i_blue {
+        transform: rotate(347deg);
+    }
+
+    .marquee__i_purple {
+        transform: rotate(13deg);
+    }
+}
+
+@media screen and (max-width:426px) {
+    .marquee {
+        min-height: 100px;
+    }
+
+    .marquee__i-el-text {
+        font-size: 25px;
+        line-height: 23.75px;
+
+
+    }
+
+    .marquee__i_blue {
+        transform: rotate(353deg);
+        top: 53%;
+    }
+
+    .marquee__i_purple {
+        transform: rotate(7deg);
     }
 }

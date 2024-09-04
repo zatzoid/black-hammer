@@ -54,6 +54,11 @@
         font-size: 1rem;
         line-height: 1.2rem;
         padding: 0.9375rem 1.875rem;
+        gap: 7px;
+    }
+    .btn-border svg{
+        width: 20px;
+        height: 20px;
     }
     .btn-border::after {
         padding: 0.9375rem 1.875rem;
