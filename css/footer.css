@@ -1,27 +1,23 @@
 .footer__c {
     display: flex;
     justify-content: space-between;
-    padding: 54px 0;
-
+    padding: 3.375rem 0;
 }
 
 .footer__c p:first-of-type {
     font-family: Gilroy;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 21.19px;
+    line-height: 1.324375rem;
     letter-spacing: 0.02em;
     text-align: left;
-
 }
 
 .footer__c p:last-of-type {
-
     font-family: Gilroy;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 21.19px;
+    line-height: 1.324375rem;
     letter-spacing: 0.02em;
     text-align: right;
-
 }

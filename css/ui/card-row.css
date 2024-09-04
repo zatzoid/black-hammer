@@ -1,23 +1,21 @@
 .card-row__list {
     display: grid;
-    grid-template-columns: repeat(4, minmax(274px, 350px));
+    grid-template-columns: repeat(4, minmax(17.125rem, 21.875rem));
     grid-auto-rows: auto;
-    gap:40px 15px ;
+    gap: 2.5rem 0.9375rem;
     justify-content: space-between;
 }
 
 .card-row {
     position: relative;
-
 }
 
 .card-row__color {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid white;
-    width: 20px;
-    height: 20px;
-
+    border: 0.0625rem solid white;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .card-row__color_blue {
@@ -26,7 +24,7 @@
 
 .card-row__img {
     width: 100%;
-    height: 260px;
+    height: 16.25rem;
 }
 
 .card-row__img img {
@@ -37,36 +35,34 @@
 }
 
 .card-row__info {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     flex-direction: column;
 }
 
 .card-row__info-name {
     font-family: Euclid Circular A;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
-    line-height: 35.5px;
+    line-height: 2.21875rem;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 .card-row__info-category {
     font-family: Euclid Circular A;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.4375rem;
     text-align: center;
-
 }
 
 .card-row__info-line {
     width: 100%;
     background-color: var(--col-lime);
     border: none;
-    height: 2px;
+    height: 0.125rem;
 }
 
 .card-row__info-bottom {
@@ -76,32 +72,30 @@
 
 .card-row__info-price {
     font-family: Floreste;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
-    line-height: 26.6px;
+    line-height: 1.6625rem;
     letter-spacing: 0.04em;
     text-align: center;
-
 }
 
 .card-row__info-price::after {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     content: '₽';
     font-family: Euclid Circular A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 25.36px;
+    line-height: 1.585rem;
     text-align: center;
-
 }
 
 .card-row__info-buy {
     display: flex;
-    gap: 5px;
+    gap: 0.3125rem;
     font-family: Euclid Circular A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
     background-color: transparent;
     border: none;
@@ -116,20 +110,18 @@
 
 .card-row__not-found-txt {
     font-family: Floreste;
-    font-size: 212px;
+    font-size: 13.25rem;
     font-weight: 400;
-    line-height: 201.4px;
+    line-height: 12.5875rem;
     text-align: center;
     color: var(--col-purple);
     opacity: 0.4;
     text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 1280px) {
     .card-row__list {
-        grid-template-columns: repeat(3, minmax(274px, 350px));
-
+        grid-template-columns: repeat(3, minmax(17.125rem, 21.875rem));
     }
 
     .card-row-not__found {
@@ -139,30 +131,69 @@
 
 @media screen and (max-width: 970px) {
     .card-row__list {
-        grid-template-columns: repeat(2, minmax(274px, 350px));
-
+        grid-template-columns: repeat(2, minmax(17.125rem, 21.875rem));
     }
 
     .card-row-not__found {
         grid-column: 1 / span 2;
     }
+
     .card-row__not-found-txt {
-        font-size: 100px;
-        line-height: 95px;
+        font-size: 6.25rem;
+        line-height: 5.9375rem;
     }
-    
 }
+
 @media screen and (max-width: 650px) {
     .card-row__list {
-        grid-template-columns: repeat(1, minmax(274px, 1fr));
-
+        grid-template-columns: repeat(1, minmax(17.125rem, 1fr));
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
     }
 
     .card-row-not__found {
-        grid-column: 1 ;
+        grid-column: 1;
     }
+
     .card-row__not-found-txt {
-        font-size: 70px;
-        line-height: 65px;
+        font-size: 4.375rem;
+        line-height: 4.0625rem;
+    }
+
+    .card-row {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        gap: 1.25rem;
+        width: 100%;
+    }
+
+    .card-row__info-name {
+        text-align: left;
+        font-size: 0.9375rem;
+        line-height: 1.188rem;
+    }
+
+    .card-row__info-category {
+        text-align: left;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    .card-row__info-price {
+        font-size: 1.5625rem;
+        line-height: 1.484375rem;
+    }
+
+    .card-row__info-buy {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .card-row__img {
+        height: auto;
+    }
+
+    .card-row__color {
+        right: 0;
     }
 }

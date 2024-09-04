@@ -2,37 +2,35 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(4, auto);
-    gap: 10px 40px;
+    gap: 0.625rem 2.5rem;
 }
 
 .card-column__img {
     grid-row: 1 / span 4;
-    max-height: 140px;
-    max-width: 90px;
+    max-height: 8.75rem;
+    max-width: 5.625rem;
     object-fit: contain;
 }
 
 .card-column__name {
-
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
-
 }
 
 .card-column__name-col {
-    width: 17px;
-    height: 17px;
-    border: 2px solid var(--col-white);
+    width: 1.0625rem;
+    height: 1.0625rem;
+    border: 0.125rem solid var(--col-white);
     border-radius: 50%;
     background-color: var(--col-blue);
 }
 
 .card-column__name-data {
     font-family: Euclid Circular A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 25.36px;
+    line-height: 1.585rem;
     text-align: left;
     text-transform: uppercase;
     white-space: nowrap;
@@ -48,7 +46,6 @@
     grid-row: 1 / span 2;
     grid-column: 3;
     justify-self: flex-end;
-
 }
 
 .card-column__category {
@@ -57,16 +54,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: Euclid Circular A;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     text-align: left;
-
 }
 
 .card-column__line {
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     color: var(--col-lime);
     grid-column: 2 / span 2;
     background-color: var(--col-lime);
@@ -75,114 +71,101 @@
 
 .card-column__price {
     font-family: Floreste;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
-    line-height: 26.6px;
+    line-height: 1.6625rem;
     letter-spacing: 0.04em;
     text-align: left;
-
 }
 
 .card-column__price::after {
     content: '₽';
     font-family: Euclid Circular A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 25.36px;
+    line-height: 1.585rem;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 
 .card-column__counter {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 
 .card-column__counter-plus,
 .card-column__counter-minus {
-    width: 45px;
-    height: 45px;
-    border: 1px solid var(--col-white);
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 0.0625rem solid var(--col-white);
     border-radius: 50%;
-
     font-family: Euclid Circular A;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 22.82px;
+    line-height: 1.425rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.219);
     color: var(--col-white);
     cursor: pointer;
-
 }
 
 .card-column__counter-plus:disabled,
 .card-column__counter-minus:disabled {
-    opacity: .7;
+    opacity: 0.7;
     cursor: default;
 }
 
-
-
 .card-column__counter-count {
     font-family: Euclid Circular A;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.4375rem;
     text-align: left;
-
 }
 
 .card-column__liked {
-    width: 54px;
-    height: 54px;
+    width: 3.375rem;
+    height: 3.375rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--col-pink);
+    border: 0.125rem solid var(--col-pink);
     border-radius: 50%;
     grid-row: 1 / span 2;
     grid-column: 3;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.19);
     margin-left: auto;
-
 }
 
 @media screen and (max-width: 500px) {
-
-
     .card-column__img {
-        max-width: 65px;
-        max-height: 120px;
+        max-width: 4.0625rem;
+        max-height: 7.5rem;
     }
 
     .card-column {
-        gap: 10px 5px
+        gap: 0.625rem 0.3125rem;
     }
 
     .card-column__name-data {
-        font-size: 15px;
-        line-height: 19.02px;
-
+        font-size: 0.9375rem;
+        line-height: 1.188rem;
     }
 
     .card-column__price {
-        font-size: 25px;
-        line-height: 23.75px;
-
+        font-size: 1.5625rem;
+        line-height: 1.484375rem;
     }
 
     .card-column__counter {
-        gap: 5px;
+        gap: 0.3125rem;
     }
 
     .card-column__counter-plus,
     .card-column__counter-minus {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
-
-
 }

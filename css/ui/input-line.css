@@ -1,26 +1,27 @@
 .input-line {
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent;
     border-bottom-color: var(--col-lime);
-    padding-bottom: 15px;
+    padding-bottom: 0.9375rem;
     color: var(--col-white);
 
     font-family: Euclid Circular A;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 19.02px;
+    line-height: 1.188rem;
     text-align: left;
-
 }
-.input-line::placeholder{
+
+.input-line::placeholder {
     font-family: Euclid Circular A;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 19.02px;
+    line-height: 1.188rem;
     text-align: left;
     text-transform: uppercase;
     color: var(--col-white);
 }
-.input-line:focus{
+
+.input-line:focus {
     outline: none;
 }

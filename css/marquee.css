@@ -1,49 +1,52 @@
 .marquee {
     position: relative;
-    min-height: 261px;
+    min-height: 16.3125rem;
     max-width: 100vw;
     overflow: hidden;
 }
 
 .marquee__i {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 0;
     width: 110%;
-   
 }
 
 .marquee__i_blue {
+    top: 75%;
     z-index: 2;
     background-color: var(--col-blue);
-    transform: rotate(356deg) translateX(-10px);
+    transform-origin: left bottom;
+    transform: rotate(355deg);
 }
 
 .marquee__i_purple {
     z-index: 1;
     background-color: var(--col-purple);
-    transform: rotate(5deg) translateX(-10px);
+    transform-origin: left top;
+    transform: rotate(6deg);
 }
-.marquee__i-list{
+
+.marquee__i-list {
     box-sizing: border-box;
-    padding: 12px 0;
+    padding: 0.75rem 0;
     display: flex;
     animation: marquee 50s infinite linear;
-
 }
+
 .marquee__i-el {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .marquee__i-el-text {
     font-family: Floreste;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 2.375rem;
     letter-spacing: 0.04em;
     text-align: center;
-    margin: 0 30px;
+    margin: 0 1.875rem;
     text-wrap: nowrap;
 }
 

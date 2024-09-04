@@ -1,117 +1,121 @@
 .categories {
-    margin: 170px 0;
+    margin: 10.625rem 0;
 }
 
 .categories__head {
     font-family: Euclid Circular A;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 500;
-    line-height: 76.08px;
+    line-height: 4.755rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
-
+    margin-bottom: 3.125rem;
 }
 
 .categories__c {}
 
 .categories__c-items {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 350px));
+    grid-template-columns: repeat(4, calc(25% - 30px));
     width: 100%;
-    gap: 40px;
-    overflow-x: auto;
+    gap: 30px;
     box-sizing: border-box;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
+    justify-content: space-around;
+    transition: all .5s;
 }
-
-
 
 .categories__c-item {
     background-image: url(../assets/category-bg.png);
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
     position: relative;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin-right: 30px;
-
 }
 
 .categories__c-item-name {
     font-family: Euclid Circular A;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
-    line-height: 35.5px;
+    line-height: 2.21875rem;
     text-align: left;
     text-transform: uppercase;
-    max-width: 184px;
+    max-width: 11.5rem;
+    position: absolute;
 }
 
 .categories__c-item-img {
     width: 60%;
-    max-width: 200px;
-    max-width: 250px;
+    max-width: 12.5rem;
+    max-width: 15.625rem;
     object-fit: contain;
     margin: auto;
+    margin-top: 1.875rem;
+    padding-right: 1.875rem;
+    transform: translateY(20%);
 }
 
 .categories__c-item-count {
     background-color: var(--col-pink);
     border-radius: 50%;
     position: absolute;
-    right: -9%;
+    right: 1%;
     top: 35%;
-    padding: 10px 15px;
+    width: 20%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: rotate(-25deg);
 }
 
 .categories__c-item-count-data {
     font-family: Floreste;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 2.375rem;
     letter-spacing: 0.04em;
     text-align: center;
-
+    box-sizing: border-box;
 }
 
 .categories__c-item-count-data::after {
     content: 'шт';
     font-family: Euclid Circular A;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 19.02px;
+    line-height: 1.1875rem;
     text-align: center;
-
 }
 
 .categories__c-item-btn {
-
-    width: 90px;
-    height: 90px;
-    margin: 24% auto 0;
+    width: 5.625rem;
+    height: 5.625rem;
+    margin: auto;
     border-radius: 50%;
-    border: 2px solid var(--col-lime);
+    border: 0.125rem solid var(--col-lime);
     background-color: transparent;
     cursor: pointer;
+    transform: translate(-17%,25%);
+    margin-top: 18%;
 }
 
-.categories__c-item-btn:hover {
+.categories__c-item-btn_opened {
     background-color: var(--col-lime);
 }
 
-.categories__c-item-btn:hover svg {
+.categories__c-item-btn_opened svg {
     stroke: var(--col-purple-dark);
 }
 
 .categories__c-cards {
     overflow: hidden;
     max-height: 0;
-    transform: all .5s;
-    margin-top: 50px;
+    transition: all .5s;
+    margin-top: 3.125rem;
 }
 
 .categories__c-cards_opened {
@@ -121,7 +125,8 @@
 .categories___c-cards-filters {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 1.875rem 0;
+    position: relative;
 }
 
 .categories___c-cards-filter {
@@ -130,11 +135,10 @@
     border: none;
     cursor: pointer;
     gap: 5px;
-
     font-family: Euclid Circular A;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 22.82px;
+    line-height: 1.42625rem;
     letter-spacing: 0.1em;
     text-align: left;
     text-transform: uppercase;
@@ -143,40 +147,182 @@
 
 .categories___c-cards-filters-txt {
     font-family: Euclid Circular A;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
-    line-height: 19.02px;
+    line-height: 1.1875rem;
     letter-spacing: 0.1em;
     text-align: left;
     text-transform: uppercase;
-
 }
 
 .categories__c-cards-load-more {
     width: fit-content;
-    margin: 30px auto;
+    margin: 1.875rem auto;
+}
+
+/* filter */
+
+.categories__c-card-filter-items-wrp {
+    z-index: 4;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    overflow: hidden;
+    transition: all .5s;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.categories__c-card-filter-items-wrp_opened {
+    max-height: 200vh;
+}
+
+.categories__c-card-filter-items {
+    width: 20rem;
+}
+
+.categories__c-card-filter-item {
+    padding: 1.375rem;
+    box-sizing: border-box;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(203, 182, 255, 1);
+}
+
+.categories__c-card-filter-item-name {
+    font-family: Euclid Circular A;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    text-align: left;
+    margin-bottom: 0.375rem;
+}
+
+.categories__c-card-filter-item-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 14px;
+}
+
+.categories__c-card-filter-item-input {
+    position: relative;
+}
+
+.categories__c-card-filter-item-input input {
+    background-color: rgba(174, 151, 232, 1);
+    border-radius: 0.6875rem;
+    border: none;
+    padding: 0.4375rem 1.3125rem 0.4375rem 2.5625rem;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Euclid Circular A;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.6875rem;
+    text-align: left;
+    color: white;
+}
+
+.categories__c-card-filter-item-input span {
+    position: absolute;
+    top: 50%;
+    left: 0.625rem;
+    font-family: Euclid Circular A;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.6875rem;
+    transform: translateY(-50%);
+}
+
+.categories__c-card-filter-item-chekbox {
+    display: flex;
+    position: relative;
+    font-family: Euclid Circular A;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.6875rem;
+    text-align: left;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.categories__c-card-filter-item-chekbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+.categories__c-card-filter-item-chekbox-target {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 0.3125rem;
+    background-color: transparent;
+    border: 0.0625rem solid var(--col-purple-dark);
+}
+
+.categories__c-card-filter-item-chekbox input:checked+.categories__c-card-filter-item-chekbox-target {
+    background-color: var(--col-lime);
+}
+
+.categories__c-card-filter-item-chekbox-sub {
+    opacity: 0.5;
+}
+
+/* filter */
+@media screen and (max-width: 1300px) {
+    .categories__c {
+        overflow: hidden;
+    }
+
+    .categories__c-items {
+        grid-template-columns: repeat(4, calc(33% - 15px));
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .categories__c-items {
+        grid-template-columns: repeat(4, calc(50% - 15px));
+    }
 }
 
 @media screen and (max-width: 600px) {
+    .categories {
+        margin-bottom: 7.5rem;
+    }
+    .categories__c-items {
+        grid-template-columns: repeat(4, calc(100% - 15px));
+    }
+    .categories__c-item {
+    }
+
     .categories___c-cards-filters {
         flex-direction: column-reverse;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .categories__head {
-        font-size: 23px;
-        line-height: 29.16px;
-
+        font-size: 1.4375rem;
+        line-height: 1.8225rem;
     }
 
     .categories__c-item-name {
-        font-size: 15px;
-        line-height: 19.02px;
-        width: 100px;
+        font-size: 0.9375rem;
+        line-height: 1.1875rem;
+        width: 6.25rem;
+    }
 
+    .categories {
+        margin-top: 7.5rem;
     }
-    .categories{
-        margin-top: 120px;
+    .categories__c-item-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: translate(-20%, 50%);
     }
-   
+    .categories__c-item-img {
+        margin-top: 0;
+    }
 }

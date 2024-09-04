@@ -8,21 +8,18 @@ header {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-top: 53px;
+    padding-top: 3.3125rem;
     box-sizing: border-box;
     text-wrap: nowrap;
 }
 
 .header__c-logo {
     margin: 0;
-
     font-family: Le Murmure;
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: 600;
-    line-height: 50.45px;
+    line-height: 3.153125rem;
     text-align: left;
-
-
 }
 
 .header__c-btn {
@@ -34,40 +31,40 @@ header {
     display: flex;
     gap: 12px;
     align-items: center;
-
     font-family: Euclid Circular A;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 21.6px;
+    line-height: 1.35rem;
     text-align: left;
-
 }
-.header__c-btn:hover{
+
+.header__c-btn:hover {
     opacity: 0.7;
 }
 
-.header__c-btn_ss{
+.header__c-btn_ss {
     display: none;
 }
-.header__c-btn_m-a{
+
+.header__c-btn_m-a {
     margin-left: auto;
 }
+
 @media screen and (max-width: 764px) {
-    .header__c-btn_fs{
+    .header__c-btn_fs {
         display: none;
     }
-    .header__c-btn_ss{
+    .header__c-btn_ss {
         display: block;
     }
-    .header__c{
+    .header__c {
         gap: 20px;
-        padding-top: 25px;
+        padding-top: 1.5625rem;
     }
-    .header__c-btn_m-a{
+    .header__c-btn_m-a {
         margin: 0;
     }
-    .header__c-btn_m-a-mob{
+    .header__c-btn_m-a-mob {
         margin-left: auto;
     }
-   
 }

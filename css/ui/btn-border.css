@@ -1,11 +1,10 @@
 .btn-border {
-
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    border: 2px solid var(--col-lime);
-    padding: 30px 50px;
+    border: 0.125rem solid var(--col-lime);
+    padding: 1.875rem 3.125rem;
     box-sizing: border-box;
     border-radius: 50%;
     position: relative;
@@ -14,30 +13,29 @@
     cursor: pointer;
 
     font-family: Euclid Circular A;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-align: left;
 
-    gap: 11px;
-
+    gap: 0.6875rem;
 }
 
 .btn-border::after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
+    top: -0.125rem;
+    left: -0.125rem;
     z-index: -1;
 
-    border: 2px solid var(--col-lime);
-    padding: 30px 50px;
+    border: 0.125rem solid var(--col-lime);
+    padding: 1.875rem 3.125rem;
     box-sizing: border-box;
     border-radius: 50%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    width: calc(100% + 0.25rem);
+    height: calc(100% + 0.25rem);
 
-    transition: all .2s;
+    transition: all 0.2s;
     transform: rotate(-20deg);
     background-color: rgba(255, 255, 255, 0.19);
 }
@@ -51,10 +49,13 @@
     transform: rotate(20deg);
 }
 
-
 @media screen and (max-width: 768px) {
     .btn-border {
-        font-size: 16px;
-        line-height: 19.2px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 0.9375rem 1.875rem;
+    }
+    .btn-border::after {
+        padding: 0.9375rem 1.875rem;
     }
 }

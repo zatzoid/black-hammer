@@ -12,7 +12,7 @@
     <!-- modals -->
     <div class="modal modal-basket ">
         <div class="modal__c">
-            <button class="modal-close">
+            <button class=" modal__c-close modal-close">
                 <img src="assets/ui/x.svg" alt="x">
 
             </button>
@@ -59,7 +59,7 @@
 
     <div class="modal modal-favorite  ">
         <div class="modal__c">
-            <button class="modal-close">
+            <button class="modal__c-close modal-close">
                 <img src="assets/ui/x.svg" alt="x">
 
             </button>
@@ -95,7 +95,7 @@
 
     <div class="modal modal-login ">
         <div class="modal__c">
-            <button class="modal-close">
+            <button class="modal__c-close modal-close">
                 <img src="assets/ui/x.svg" alt="x">
 
             </button>
@@ -108,7 +108,28 @@
 
                 <button class="btn-border modal_c-submit" type="submit">Войти</button>
             </form>
-            <p class="modal__c-sign"> нет аккаунта? <a href="#">регистрация</a></p>
+            <button class="modal__c-sign modal__c-sign_in  modal-close modal-opener" data-modal="signup"> нет аккаунта?
+                регистрация</button>
+
+        </div>
+    </div>
+    <div class="modal modal-signup ">
+        <div class="modal__c">
+            <button class="modal__c-close modal-close">
+                <img src="assets/ui/x.svg" alt="x">
+
+            </button>
+            <p class="modal__c-name">Вход</p>
+            <form class="modal__c-form">
+
+                <input class="input-line" type="email" required placeholder="e-mail">
+                <input class="input-line" type="password" required placeholder="password">
+                <input class="input-line" type="password" required placeholder="повторите пароль">
+
+
+                <button class="btn-border modal_c-submit" type="submit">Войти</button>
+            </form>
+            <button class="modal__c-sign modal__c-sign_up modal-close modal-opener" data-modal="login"> войти</button>
 
 
         </div>
@@ -117,7 +138,7 @@
     <div class="modal  modal-contacts">
         <div class="modal__c modal__c_contacts">
             <div class="modal__c-scroll">
-                <button class="modal-close">
+                <button class="modal__c-close modal-close">
                     <img src="assets/ui/x.svg" alt="x">
 
                 </button>
@@ -151,9 +172,205 @@
                 </form>
 
                 <div class="modal__c-contacts-map">
-
+                    <div style="position:relative;overflow:hidden; width: 100%; height: 100%;">
+                        <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/house/khokhlovskiy_pereulok_11s3/Z04YcANjTUUPQFtvfXt0d3tmYg==/?ll=37.643408%2C55.756756&utm_medium=mapframe&utm_source=maps&z=17.06"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Хохловский переулок, 11с3 —
+                            Яндекс Карты</a><iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=37.643408%2C55.756756&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcxNzQ3MRJI0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCl0L7RhdC70L7QstGB0LrQuNC5INC_0LXRgNC10YPQu9C-0LosIDEx0YEzIgoN2JIWQhXrBl9C&z=17.06"
+                            width="100%" height="100%" frameborder="1" allowfullscreen="true"
+                            style="position:relative;"></iframe>
+                    </div>
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <div class="modal modal-item">
+        <div class="modal__c modal__c-item">
+            <button class="modal__c-close modal-close">
+                закрыть <img src="assets/ui/x.svg" alt="x">
+            </button>
+            <div class="modal__c-item-top">
+                <h2 class="modal__c-item-name">Benjamin Moore</h2>
+                <p class="modal__c-item-top-art">арт: 321654879</p>
+                <div class="modal__c-item-top-col">
+                    <p>Цвет:</p>
+                    <span class="modal__c-item-top-col-self modal__c-item-top-col-self_pur"></span>
+                    <p>Лаванда</p>
+                </div>
+
+                <img class="modal__c-item-top-img" src="./assets/items/lamp.png" alt="item">
+
+                <button class="modal__c-item-top-like">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.1494 2.85655L22.441 3.56236L22.4413 3.56269L23.1494 2.85655ZM18.6831 1V2V1ZM14.2167 2.85655L14.925 3.56253L14.9251 3.56236L14.2167 2.85655ZM12.9997 4.07749L12.2915 4.78347L12.9997 5.49397L13.7079 4.78347L12.9997 4.07749ZM11.7826 2.85655L11.0744 3.56253L11.0744 3.56253L11.7826 2.85655ZM2.85001 11.8178L3.55825 11.1118H3.55825L2.85001 11.8178ZM4.06705 13.0387L3.35882 13.7447H3.35882L4.06705 13.0387ZM12.9997 22L12.2915 22.706L12.9997 23.4165L13.7079 22.706L12.9997 22ZM21.9323 13.0387L22.6406 13.7447L21.9323 13.0387ZM23.1494 11.8178L22.4413 11.1117L22.4411 11.1118L23.1494 11.8178ZM23.8578 2.15074C23.1786 1.4691 22.3721 0.928207 21.4842 0.559113L20.7165 2.40591C21.3612 2.67393 21.9473 3.06684 22.441 3.56236L23.8578 2.15074ZM21.4842 0.559113C20.5962 0.190016 19.6444 0 18.6831 0V2C19.3808 2 20.0717 2.1379 20.7165 2.40591L21.4842 0.559113ZM18.6831 0C17.7217 0 16.7699 0.190016 15.8819 0.559113L16.6496 2.40591C17.2944 2.1379 17.9853 2 18.6831 2V0ZM15.8819 0.559113C14.994 0.928207 14.1875 1.4691 13.5083 2.15074L14.9251 3.56236C15.4188 3.06684 16.0049 2.67393 16.6496 2.40591L15.8819 0.559113ZM13.5085 2.15058L12.2915 3.37152L13.7079 4.78347L14.925 3.56253L13.5085 2.15058ZM13.7079 3.37152L12.4909 2.15058L11.0744 3.56253L12.2915 4.78347L13.7079 3.37152ZM12.4909 2.15058C11.1191 0.774353 9.25778 0.000615954 7.31633 0.000615954V2.00062C8.72527 2.00062 10.0772 2.56208 11.0744 3.56253L12.4909 2.15058ZM7.31633 0.000615954C5.37488 0.000615954 3.5136 0.774353 2.14177 2.15058L3.55825 3.56253C4.5555 2.56208 5.90739 2.00062 7.31633 2.00062V0.000615954ZM2.14177 2.15058C0.770051 3.52669 0 5.39243 0 7.33718H2C2 5.9208 2.56089 4.56308 3.55825 3.56253L2.14177 2.15058ZM0 7.33718C0 9.28193 0.770051 11.1477 2.14177 12.5238L3.55825 11.1118C2.56089 10.1113 2 8.75355 2 7.33718H0ZM2.14177 12.5238L3.35882 13.7447L4.77529 12.3328L3.55825 11.1118L2.14177 12.5238ZM3.35882 13.7447L12.2915 22.706L13.7079 21.294L4.77529 12.3328L3.35882 13.7447ZM13.7079 22.706L22.6406 13.7447L21.2241 12.3328L12.2915 21.294L13.7079 22.706ZM22.6406 13.7447L23.8576 12.5238L22.4411 11.1118L21.2241 12.3328L22.6406 13.7447ZM23.8574 12.5239C24.5369 11.8426 25.0757 11.0339 25.4433 10.1439L23.5948 9.38045C23.3273 10.0281 22.9352 10.6164 22.4413 11.1117L23.8574 12.5239ZM25.4433 10.1439C25.8109 9.25402 26 8.30028 26 7.33718H24C24 8.03844 23.8623 8.73276 23.5948 9.38045L25.4433 10.1439ZM26 7.33718C26 6.37407 25.8109 5.42033 25.4433 4.53042L23.5948 5.29391C23.8623 5.94159 24 6.63591 24 7.33718H26ZM25.4433 4.53042C25.0757 3.64049 24.5369 2.83173 23.8574 2.15041L22.4413 3.56269C22.9352 4.05799 23.3273 4.64624 23.5948 5.29391L25.4433 4.53042Z"
+                            fill="#D9FF5A" />
+                    </svg>
+                </button>
+                <p class="modal__c-item-top-height">Высота: <span>60cm</span></p>
+            </div>
+
+            <div class="modal__c-item-bottom">
+                <h3 class="modal__c-item-bottom-name modal__c-item-bottom-name_ss">Santa Trinita</h3>
+                <p class="modal__c-item-bottom-desc">
+                    Функциональная дизайнерская лампа для создания максимально комфортного освещения
+                </p>
+                <div class="modal__c-item-bottom-info">
+                    <h3 class="modal__c-item-bottom-name modal__c-item-bottom-name_fs">Santa Trinita</h3>
+                    <p class="modal__c-item-bottom-price">150 000</p>
+                </div>
+                <button class="modal__c-item-bottom-buy btn-border">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.84 4.82818L4.64 7.27818C4.6 7.74818 4.97 8.13818 5.44 8.13818H20.75C21.17 8.13818 21.52 7.81818 21.55 7.39818C21.68 5.62818 20.33 4.18818 18.56 4.18818H6.27C6.17 3.74818 5.97 3.32818 5.66 2.97818C5.16 2.44818 4.46 2.13818 3.74 2.13818H2C1.59 2.13818 1.25 2.47818 1.25 2.88818C1.25 3.29818 1.59 3.63818 2 3.63818H3.74C4.05 3.63818 4.34 3.76818 4.55 3.98818C4.76 4.21818 4.86 4.51818 4.84 4.82818ZM10 21.6382C10 22.6047 9.2165 23.3882 8.25 23.3882C7.2835 23.3882 6.5 22.6047 6.5 21.6382C6.5 20.6717 7.2835 19.8882 8.25 19.8882C9.2165 19.8882 10 20.6717 10 21.6382ZM18 21.6382C18 22.6047 17.2165 23.3882 16.25 23.3882C15.2835 23.3882 14.5 22.6047 14.5 21.6382C14.5 20.6717 15.2835 19.8882 16.25 19.8882C17.2165 19.8882 18 20.6717 18 21.6382ZM5.17005 9.63818H20.5101C20.9801 9.63818 21.3401 10.0282 21.3001 10.4882L20.9701 15.1582C20.8601 16.6582 19.5401 17.8882 18.0401 17.8882H6.92005C5.21005 17.8882 3.87005 16.4282 4.01005 14.7182L4.37005 10.3682C4.41005 9.95818 4.75005 9.63818 5.17005 9.63818Z"
+                            fill="#D9FF5A" />
+                    </svg>
+
+                    Купить</button>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="modal modal-search">
+        <div class="modal__c">
+            <button class="modal__c-close modal-close">
+                <img src="assets/ui/x.svg" alt="x">
+            </button>
+
+            <div class="search__c-form">
+
+                <button class="search__c-form-find">
+                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z"
+                            stroke="#D9FF5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M23 22L18 17" stroke="#D9FF5A" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <input class="search__c-form-input" type="text" placeholder="text">
+                <button class="search__c-form-close">
+                    <img src="assets/ui/x.svg" alt="x">
+                </button>
+            </div>
+            <h2 class="search__c-results-head">результаты поиска</h2>
+            <div class="search__c-results">
+
+                <ul class="search__c-results-items card-row__list">
+                    <li class="card-row">
+                        <div class="card-row__color card-row__color_blue">
+
+                        </div>
+                        <div class="card-row__img">
+                            <img src="./assets/items/chair.png" alt="card">
+                        </div>
+                        <div class="card-row__info">
+                            <h2 class="card-row__info-name">kristin</h2>
+                            <h3 class="card-row__info-category">зеракло</h3>
+                            <hr class="card-row__info-line">
+                            <div class="card-row__info-bottom">
+                                <p class="card-row__info-price">150 000</p>
+                                <button class="card-row__info-buy modal-opener" data-modal="item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94ZM10 20.75C10 21.7165 9.2165 22.5 8.25 22.5C7.2835 22.5 6.5 21.7165 6.5 20.75C6.5 19.7835 7.2835 19 8.25 19C9.2165 19 10 19.7835 10 20.75ZM18 20.75C18 21.7165 17.2165 22.5 16.25 22.5C15.2835 22.5 14.5 21.7165 14.5 20.75C14.5 19.7835 15.2835 19 16.25 19C17.2165 19 18 19.7835 18 20.75ZM5.17005 8.75H20.5101C20.9801 8.75 21.3401 9.14 21.3001 9.6L20.9701 14.27C20.8601 15.77 19.5401 17 18.0401 17H6.92005C5.21005 17 3.87005 15.54 4.01005 13.83L4.37005 9.48C4.41005 9.07 4.75005 8.75 5.17005 8.75Z"
+                                            fill="#D9FF5A" />
+                                    </svg>
+
+                                    Купить</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-row">
+                        <div class="card-row__color card-row__color_blue">
+
+                        </div>
+                        <div class="card-row__img">
+                            <img src="./assets/items/chair.png" alt="card">
+                        </div>
+                        <div class="card-row__info">
+                            <h2 class="card-row__info-name">kristin</h2>
+                            <h3 class="card-row__info-category">зеракло</h3>
+                            <hr class="card-row__info-line">
+                            <div class="card-row__info-bottom">
+                                <p class="card-row__info-price">150 000</p>
+                                <button class="card-row__info-buy modal-opener" data-modal="item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94ZM10 20.75C10 21.7165 9.2165 22.5 8.25 22.5C7.2835 22.5 6.5 21.7165 6.5 20.75C6.5 19.7835 7.2835 19 8.25 19C9.2165 19 10 19.7835 10 20.75ZM18 20.75C18 21.7165 17.2165 22.5 16.25 22.5C15.2835 22.5 14.5 21.7165 14.5 20.75C14.5 19.7835 15.2835 19 16.25 19C17.2165 19 18 19.7835 18 20.75ZM5.17005 8.75H20.5101C20.9801 8.75 21.3401 9.14 21.3001 9.6L20.9701 14.27C20.8601 15.77 19.5401 17 18.0401 17H6.92005C5.21005 17 3.87005 15.54 4.01005 13.83L4.37005 9.48C4.41005 9.07 4.75005 8.75 5.17005 8.75Z"
+                                            fill="#D9FF5A" />
+                                    </svg>
+
+                                    Купить</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-row">
+                        <div class="card-row__color card-row__color_blue">
+
+                        </div>
+                        <div class="card-row__img">
+                            <img src="./assets/items/chair.png" alt="card">
+                        </div>
+                        <div class="card-row__info">
+                            <h2 class="card-row__info-name">kristin</h2>
+                            <h3 class="card-row__info-category">зеракло</h3>
+                            <hr class="card-row__info-line">
+                            <div class="card-row__info-bottom">
+                                <p class="card-row__info-price">150 000</p>
+                                <button class="card-row__info-buy modal-opener" data-modal="item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94ZM10 20.75C10 21.7165 9.2165 22.5 8.25 22.5C7.2835 22.5 6.5 21.7165 6.5 20.75C6.5 19.7835 7.2835 19 8.25 19C9.2165 19 10 19.7835 10 20.75ZM18 20.75C18 21.7165 17.2165 22.5 16.25 22.5C15.2835 22.5 14.5 21.7165 14.5 20.75C14.5 19.7835 15.2835 19 16.25 19C17.2165 19 18 19.7835 18 20.75ZM5.17005 8.75H20.5101C20.9801 8.75 21.3401 9.14 21.3001 9.6L20.9701 14.27C20.8601 15.77 19.5401 17 18.0401 17H6.92005C5.21005 17 3.87005 15.54 4.01005 13.83L4.37005 9.48C4.41005 9.07 4.75005 8.75 5.17005 8.75Z"
+                                            fill="#D9FF5A" />
+                                    </svg>
+
+                                    Купить</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-row">
+                        <div class="card-row__color card-row__color_blue">
+
+                        </div>
+                        <div class="card-row__img">
+                            <img src="./assets/items/chair.png" alt="card">
+                        </div>
+                        <div class="card-row__info">
+                            <h2 class="card-row__info-name">kristin</h2>
+                            <h3 class="card-row__info-category">зеракло</h3>
+                            <hr class="card-row__info-line">
+                            <div class="card-row__info-bottom">
+                                <p class="card-row__info-price">150 000</p>
+                                <button class="card-row__info-buy modal-opener" data-modal="item">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94ZM10 20.75C10 21.7165 9.2165 22.5 8.25 22.5C7.2835 22.5 6.5 21.7165 6.5 20.75C6.5 19.7835 7.2835 19 8.25 19C9.2165 19 10 19.7835 10 20.75ZM18 20.75C18 21.7165 17.2165 22.5 16.25 22.5C15.2835 22.5 14.5 21.7165 14.5 20.75C14.5 19.7835 15.2835 19 16.25 19C17.2165 19 18 19.7835 18 20.75ZM5.17005 8.75H20.5101C20.9801 8.75 21.3401 9.14 21.3001 9.6L20.9701 14.27C20.8601 15.77 19.5401 17 18.0401 17H6.92005C5.21005 17 3.87005 15.54 4.01005 13.83L4.37005 9.48C4.41005 9.07 4.75005 8.75 5.17005 8.75Z"
+                                            fill="#D9FF5A" />
+                                    </svg>
+
+                                    Купить</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="card-row-not__found">
+                        <p class="card-row__not-found-txt">no results</p>
+                    </li>
+                </ul>
+            </div>
+
 
         </div>
     </div>
@@ -181,7 +398,7 @@
                     Контакты
                 </button>
 
-                <button class="header__c-btn header__c-btn_fs header__c-btn_m-a">
+                <button class="header__c-btn header__c-btn_fs header__c-btn_m-a modal-opener" data-modal="search">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.5 20C16.1944 20 20 16.1944 20 11.5C20 6.80558 16.1944 3 11.5 3C6.80558 3 3 6.80558 3 11.5C3 16.1944 6.80558 20 11.5 20Z"
@@ -192,7 +409,7 @@
 
                     Поиск
                 </button>
-                <button class="header__c-btn header__c-btn_ss header__c-btn_m-a header__c-btn_m-a-mob">
+                <button class="header__c-btn header__c-btn_ss header__c-btn_m-a header__c-btn_m-a-mob modal-opener" data-modal="search">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.5 20C16.1944 20 20 16.1944 20 11.5C20 6.80558 16.1944 3 11.5 3C6.80558 3 3 6.80558 3 11.5C3 16.1944 6.80558 20 11.5 20Z"
@@ -261,7 +478,7 @@
                                 <p class="heading__c-item-slide-title">слайд</p>
                                 <p class="heading__c-item-slide-count">01</p>
                             </div>
-                            <button class="heading__c-item-buy btn-border">
+                            <button class="heading__c-item-buy btn-border modal-opener" data-modal="item">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--col-lime)"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -289,7 +506,7 @@
                                 <p class="heading__c-item-slide-title">слайд</p>
                                 <p class="heading__c-item-slide-count">02</p>
                             </div>
-                            <button class="heading__c-item-buy btn-border">
+                            <button class="heading__c-item-buy btn-border modal-opener" data-modal="item">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--col-lime)"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -316,7 +533,7 @@
                                 <p class="heading__c-item-slide-title">слайд</p>
                                 <p class="heading__c-item-slide-count">03</p>
                             </div>
-                            <button class="heading__c-item-buy btn-border">
+                            <button class="heading__c-item-buy btn-border modal-opener" data-modal="item">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--col-lime)"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -396,7 +613,7 @@
                         </li>
 
                     </ul>
-                    <div class="categories__c-cards categories__c-cards_opened">
+                    <div class="categories__c-cards ">
                         <div class="categories___c-cards-filters">
                             <button class="categories___c-cards-filter">
                                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
@@ -408,6 +625,41 @@
                                 фильтры
                             </button>
                             <p class="categories___c-cards-filters-txt">20 позиций в категории</p>
+                            <div class="categories__c-card-filter-items-wrp ">
+                                <ul class="categories__c-card-filter-items">
+                                    <li class="categories__c-card-filter-item">
+                                        <p class="categories__c-card-filter-item-name">Цена</p>
+                                        <div class="categories__c-card-filter-item-inputs">
+                                            <label class="categories__c-card-filter-item-input">
+                                                <input type="number">
+                                                <span>от</span>
+                                            </label>
+                                            <label class="categories__c-card-filter-item-input">
+                                                <input type="number">
+                                                <span>до</span>
+                                            </label>
+                                        </div>
+
+                                    </li>
+                                    <li class="categories__c-card-filter-item">
+                                        <p class="categories__c-card-filter-item-name">Цвета</p>
+                                        <label class="categories__c-card-filter-item-chekbox">
+                                            <input type="checkbox">
+                                            <span class="categories__c-card-filter-item-chekbox-target"></span>
+                                            Зеленый
+                                            <span class="categories__c-card-filter-item-chekbox-sub">(228)</span>
+                                        </label>
+                                        <label class="categories__c-card-filter-item-chekbox">
+                                            <input type="checkbox">
+                                            <span class="categories__c-card-filter-item-chekbox-target"></span>
+                                            Зеленый
+                                            <span class="categories__c-card-filter-item-chekbox-sub">(228)</span>
+                                        </label>
+                                    </li>
+
+                                </ul>
+                            </div>
+
                         </div>
                         <ul class="card-row__list">
                             <li class="card-row">
@@ -423,7 +675,7 @@
                                     <hr class="card-row__info-line">
                                     <div class="card-row__info-bottom">
                                         <p class="card-row__info-price">150 000</p>
-                                        <button class="card-row__info-buy">
+                                        <button class="card-row__info-buy modal-opener" data-modal="item">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -448,7 +700,7 @@
                                     <hr class="card-row__info-line">
                                     <div class="card-row__info-bottom">
                                         <p class="card-row__info-price">150 000</p>
-                                        <button class="card-row__info-buy">
+                                        <button class="card-row__info-buy modal-opener" data-modal="item">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -473,7 +725,7 @@
                                     <hr class="card-row__info-line">
                                     <div class="card-row__info-bottom">
                                         <p class="card-row__info-price">150 000</p>
-                                        <button class="card-row__info-buy">
+                                        <button class="card-row__info-buy modal-opener" data-modal="item">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -498,7 +750,7 @@
                                     <hr class="card-row__info-line">
                                     <div class="card-row__info-bottom">
                                         <p class="card-row__info-price">150 000</p>
-                                        <button class="card-row__info-buy">
+                                        <button class="card-row__info-buy modal-opener" data-modal="item">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -645,10 +897,13 @@
 
     </footer>
 
-    <script src="./js/categories.js" ></script>
-    <script src="./js/heading.js" ></script>
-    <script src="./js/marquee.js" ></script>
-    <script src="./js/modals.js" ></script>
+    <script src="./js/categories.js"></script>
+    <script src="./js/heading.js"></script>
+    <script src="./js/marquee.js"></script>
+    <script src="./js/modals.js"></script>
+    <script src="./js/filters.js"></script>
+    <script src="./js/blogSlider.js"></script>
+    <script src="./js/categorySlider.js"></script>
 </body>
 
 </html>
