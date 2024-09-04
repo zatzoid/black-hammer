@@ -173,6 +173,7 @@
     max-height: 0;
 }
 
+
 .categories__c-card-filter-items-wrp_opened {
     max-height: 200vh;
 }
@@ -271,6 +272,10 @@
     opacity: 0.5;
 }
 
+.categories___c-cards-filter-mobil-close {
+    display: none;
+}
+
 /* filter */
 @media screen and (max-width: 1300px) {
     .categories__c {
@@ -331,11 +336,42 @@
 }
 
 @media screen and (max-width: 426px) {
-    .categories{
+    .categories {
         margin-bottom: 120px;
     }
+
     .categories__c-item-count {
-       height: 15%;
-       top: 33%;
+        height: 15%;
+        top: 33%;
+    }
+
+    .categories__c-cards {
+        position: fixed;
+        top: -100vh;
+        margin: 0;
+        left: 0;
+        background-color: var(--col-purple-dark);
+        width: 100vw;
+        height: 100vh;
+        z-index: 20;
+        box-sizing: border-box;
+        padding: 40px 15px;
+    }
+
+    .categories__c-cards_opened {
+        top: 0;
+    }
+
+    .categories___c-cards-filter-mobil {
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 100px;
+        box-sizing: border-box;
+    }
+
+    .categories___c-cards-filter-mobil-close {
+        top: 1.5rem;
+        right: 1.5rem;
+        display: block;
     }
 }

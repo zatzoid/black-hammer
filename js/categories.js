@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
     /* categories */
     const categoryItems = document.querySelector('.categories__c-cards')
     const btns = document.querySelectorAll('.categories__c-item-btn')
-    
+
     btns.forEach((btn) => {
         btn.addEventListener('click', (ev) => {
 
@@ -20,6 +20,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
         })
     })
+
+    categoryItems.querySelector('.categories___c-cards-filter-mobil-close')
+        .addEventListener('click', () => {
+            btns.forEach((el) => el.classList.remove('categories__c-item-btn_opened'))
+            categoryItems.classList.remove('categories__c-cards_opened')
+        })
     /* categories */
 
 
