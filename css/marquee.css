@@ -51,6 +51,10 @@
     text-transform: uppercase;
 }
 
+.marquee__i-el img {
+    margin-bottom: 0.5rem;
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(0%);
@@ -109,6 +113,5 @@
     .marquee__i-el img {
         height: 0.8rem;
         width: 0.8rem;
-        margin-bottom: 0.5rem;
     }
 }
