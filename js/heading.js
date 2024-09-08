@@ -6,7 +6,16 @@ window.addEventListener("DOMContentLoaded", function () {
     const counter = document.querySelector('.heading__wrp-count')
 
     items.forEach((el) => {
-        el.addEventListener('click', headingCards)
+        el.addEventListener('click', (ev)=>{
+            if (window.innerWidth > 800) {
+                items.forEach(el => {
+                    el.classList.remove('heading__c-item_opened')
+                    el.classList.add('heading__c-item_closed')
+                });
+                ev.currentTarget.classList.remove('heading__c-item_closed')
+                ev.currentTarget.classList.add('heading__c-item_opened')
+            }
+        })
 
     })
 
@@ -35,20 +44,11 @@ window.addEventListener("DOMContentLoaded", function () {
             });
         } else {
             container.style.transform = `translateX(-000%)`
+
         }
+        counter.textContent = `0${currentSlide + 1}`
     })
 
-    function headingCards(e) {
-        if (window.innerWidth > 800) {
-            items.forEach(el => {
-                el.classList.remove('heading__c-item_opened')
-                el.classList.add('heading__c-item_closed')
-            });
-            e.currentTarget.classList.remove('heading__c-item_closed')
-            e.currentTarget.classList.add('heading__c-item_opened')
-        }
-
-    }
     /* heading */
 
 
