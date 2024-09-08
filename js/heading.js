@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
     /* heading */
     const container = document.querySelector('.heading__c')
     const items = container.querySelectorAll('.heading__c-item')
+    const counter = document.querySelector('.heading__wrp-count')
 
     items.forEach((el) => {
         el.addEventListener('click', headingCards)
@@ -20,6 +21,7 @@ window.addEventListener("DOMContentLoaded", function () {
             currentSlide--
         }
         container.style.transform = `translateX(calc(-${currentSlide}00% - ${20 * currentSlide}px))`
+        counter.textContent = `0${currentSlide + 1}`
     })
 
 
