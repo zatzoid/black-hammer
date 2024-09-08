@@ -46,7 +46,6 @@ window.addEventListener("DOMContentLoaded", function () {
             container.style.transform = `translateX(-000%)`
 
         }
-        counter.textContent = `0${currentSlide + 1}`
     })
 
     /* heading */
